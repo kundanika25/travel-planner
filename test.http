@@ -1,0 +1,17 @@
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+  "email": "example@example.com",
+  "password": "hashedpassword"
+}
+###
+POST http://localhost:8000/auth/signup
+Content-Type: application/json
+
+{
+  "name": "example2@example.com",
+  "password": "hashedpassword",
+  "email": "example2@example.com"
+}
+###
