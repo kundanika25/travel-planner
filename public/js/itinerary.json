@@ -1,0 +1,523 @@
+
+
+{
+    "Switzerland": [
+        {
+            "day": "Day 1",
+            "activities": [
+                "Visit the Matterhorn",
+                "Explore Lake Geneva",
+                "Take a scenic train ride"
+            ],
+            "image": "https://i.ibb.co/qCkd9jS/img1.jpg"
+        },
+        {
+            "day": "Day 2",
+            "activities": [
+                "Hike in the Swiss Alps",
+                "Sample Swiss chocolates",
+                "Visit the Rhine Falls"
+            ],
+            "image": "https://i.ibb.co/qCkd9jS/img1.jpg"
+        },
+        {
+            "day": "Day 3",
+            "activities": [
+                "Explore Lucerne",
+                "Visit Jungfraujoch",
+                "Take a boat trip on Lake Lucerne"
+            ],
+            "image": "https://i.ibb.co/qCkd9jS/img1.jpg"
+        },
+        {
+            "day": "Day 4",
+            "activities": [
+                "Explore Zurich",
+                "Visit Bern",
+                "Take a day trip to Interlaken"
+            ],
+            "image": "https://i.ibb.co/qCkd9jS/img1.jpg"
+        },
+        {
+            "day": "Day 5",
+            "activities": [
+                "Visit Lausanne",
+                "Explore Zermatt",
+                "Take a scenic drive through Swiss countryside"
+            ],
+            "image": "https://i.ibb.co/qCkd9jS/img1.jpg"
+        }
+    ],
+    "Finland": [
+        {
+            "day": "Day 1",
+            "activities": [
+                "Visit Santa Claus Village",
+                "Experience the Northern Lights",
+                "Husky sledding adventure"
+            ],
+            "image": "https://i.ibb.co/jrRb11q/img2.jpg"
+        },
+        {
+            "day": "Day 2",
+            "activities": [
+                "Explore the Finnish Lakeland",
+                "Skiing in Lapland",
+                "Visit Helsinki Cathedral"
+            ],
+            "image": "https://i.ibb.co/jrRb11q/img2.jpg"
+        },
+        {
+            "day": "Day 3",
+            "activities": [
+                "Discover Rovaniemi",
+                "Visit Ranua Wildlife Park",
+                "Explore Korouoma Canyon"
+            ],
+            "image": "https://i.ibb.co/jrRb11q/img2.jpg"
+        },
+        {
+            "day": "Day 4",
+            "activities": [
+                "Visit Tampere",
+                "Explore Turku Archipelago",
+                "Take a cruise on Saimaa Lake"
+            ],
+            "image": "https://i.ibb.co/jrRb11q/img2.jpg"
+        },
+        {
+            "day": "Day 5",
+            "activities": [
+                "Explore Porvoo",
+                "Visit Savonlinna",
+                "Relax in a Finnish sauna"
+            ],
+            "image": "https://i.ibb.co/jrRb11q/img2.jpg"
+        }
+    ],
+        "Iceland": [
+            {
+                "day": "Day 1",
+                "activities": [
+                    "Visit the Blue Lagoon",
+                    "Explore the Golden Circle",
+                    "Hike on a glacier"
+                ],
+                "image": "https://i.ibb.co/NSwVv8D/img3.jpg"
+            },
+            {
+                "day": "Day 2",
+                "activities": [
+                    "Discover Reykjavik",
+                    "Explore Vatnajokull National Park",
+                    "Relax in natural hot springs"
+                ],
+                "image": "https://i.ibb.co/NSwVv8D/img3.jpg"
+            },
+            {
+                "day": "Day 3",
+                "activities": [
+                    "Visit Jokulsarlon Glacier Lagoon",
+                    "Explore Skaftafell National Park",
+                    "Discover Akureyri"
+                ],
+                "image": "https://i.ibb.co/NSwVv8D/img3.jpg"
+            },
+            {
+                "day": "Day 4",
+                "activities": [
+                    "Explore Snæfellsnes Peninsula",
+                    "Visit Hraunfossar waterfalls",
+                    "Take a whale watching tour"
+                ],
+                "image": "https://i.ibb.co/NSwVv8D/img3.jpg"
+            },
+            {
+                "day": "Day 5",
+                "activities": [
+                    "Explore Westfjords region",
+                    "Visit Dynjandi waterfall",
+                    "Relax in Reykjanes Peninsula hot springs"
+                ],
+                "image": "https://i.ibb.co/NSwVv8D/img3.jpg"
+            }
+        ],
+        "Australia": [
+            {
+                "day": "Day 1",
+                "activities": [
+                    "Snorkel in the Great Barrier Reef",
+                    "Explore the Sydney Opera House",
+                    "Visit Uluru"
+                ],
+                "image": "https://i.ibb.co/Bq4Q0M8/img4.jpg"
+            },
+            {
+                "day": "Day 2",
+                "activities": [
+                    "Explore the Daintree Rainforest",
+                    "Kangaroo spotting in the Outback",
+                    "Visit the Twelve Apostles"
+                ],
+                "image": "https://i.ibb.co/Bq4Q0M8/img4.jpg"
+            },
+            {
+                "day": "Day 3",
+                "activities": [
+                    "Discover the Great Ocean Road",
+                    "Explore Kangaroo Island",
+                    "Visit the Whitsunday Islands"
+                ],
+                "image": "https://i.ibb.co/Bq4Q0M8/img4.jpg"
+            },
+            {
+                "day": "Day 4",
+                "activities": [
+                    "Visit the Great Barrier Reef Marine Park",
+                    "Explore the Grampians National Park",
+                    "Discover Phillip Island"
+                ],
+                "image": "https://i.ibb.co/Bq4Q0M8/img4.jpg"
+            },
+            {
+                "day": "Day 5",
+                "activities": [
+                    "Explore the Great Barrier Reef islands",
+                    "Visit the Royal Botanic Gardens in Melbourne",
+                    "Experience the Great Ocean Walk"
+                ],
+                "image": "https://i.ibb.co/Bq4Q0M8/img4.jpg"
+            }
+        ],
+        "Netherlands": [
+            {
+                "day": "Day 1",
+                "activities": [
+                    "Explore Amsterdam's canals",
+                    "Visit the Anne Frank House",
+                    "Cycle through tulip fields"
+                ],
+                "image": "https://i.ibb.co/jTQfmTq/img5.jpg"
+            },
+            {
+                "day": "Day 2",
+                "activities": [
+                    "Discover Rotterdam architecture",
+                    "Visit the Van Gogh Museum",
+                    "Explore Utrecht"
+                ],
+                "image": "https://i.ibb.co/jTQfmTq/img5.jpg"
+            },
+            {
+                "day": "Day 3",
+                "activities": [
+                    "Explore the Keukenhof Gardens",
+                    "Visit the Rijksmuseum",
+                    "Take a boat tour in Giethoorn"
+                ],
+                "image": "https://i.ibb.co/jTQfmTq/img5.jpg"
+            },
+            {
+                "day": "Day 4",
+                "activities": [
+                    "Visit the Hoge Veluwe National Park",
+                    "Explore Delft",
+                    "Discover Maastricht"
+                ],
+                "image": "https://i.ibb.co/jTQfmTq/img5.jpg"
+            },
+            {
+                "day": "Day 5",
+                "activities": [
+                    "Explore Leiden",
+                    "Visit the Windmills of Kinderdijk",
+                    "Discover the Hague"
+                ],
+                "image": "https://i.ibb.co/jTQfmTq/img5.jpg"
+            }
+        ],
+            "Japan": [
+                {
+                    "day": "Day 1",
+                    "activities": [
+                        "Visit Tokyo Tower",
+                        "Explore Senso-ji Temple",
+                        "Enjoy sushi at Tsukiji Market"
+                    ],
+                    "image": "https://example.com/japan_day1.jpg"
+                },
+                {
+                    "day": "Day 2",
+                    "activities": [
+                        "Explore Akihabara",
+                        "Visit the Meiji Shrine",
+                        "Shop in Harajuku"
+                    ],
+                    "image": "https://example.com/japan_day2.jpg"
+                },
+                {
+                    "day": "Day 3",
+                    "activities": [
+                        "Visit the Ghibli Museum",
+                        "Explore Shinjuku Gyoen National Garden",
+                        "Discover Odaiba"
+                    ],
+                    "image": "https://example.com/japan_day3.jpg"
+                },
+                {
+                    "day": "Day 4",
+                    "activities": [
+                        "Explore Mount Fuji",
+                        "Visit Nikko Toshogu Shrine",
+                        "Experience traditional tea ceremony"
+                    ],
+                    "image": "https://example.com/japan_day4.jpg"
+                },
+                {
+                    "day": "Day 5",
+                    "activities": [
+                        "Explore Osaka Castle",
+                        "Visit Universal Studios Japan",
+                        "Experience Dotonbori nightlife"
+                    ],
+                    "image": "https://example.com/japan_day5.jpg"
+                }
+            ],
+            "Paris": [
+                {
+                    "day": "Day 1",
+                    "activities": [
+                        "Visit the Eiffel Tower",
+                        "Explore the Louvre Museum",
+                        "Stroll along the Seine River"
+                    ],
+                    "image": "https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg"
+                },
+                {
+                    "day": "Day 2",
+                    "activities": [
+                        "Discover Notre-Dame Cathedral",
+                        "Walk through Montmartre district",
+                        "Enjoy a cruise on the Seine"
+                    ],
+                    "image": "https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg"
+                },
+                {
+                    "day": "Day 3",
+                    "activities": [
+                        "Visit Palace of Versailles",
+                        "Explore Luxembourg Gardens",
+                        "Shopping on Champs-Élysées"
+                    ],
+                    "image": "https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg"
+                },
+                {
+                    "day": "Day 4",
+                    "activities": [
+                        "Explore Musée d'Orsay",
+                        "Discover the Pompidou Centre",
+                        "Visit Sainte-Chapelle"
+                    ],
+                    "image": "https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg"
+                },
+                {
+                    "day": "Day 5",
+                    "activities": [
+                        "Visit Rodin Museum",
+                        "Explore Île de la Cité",
+                        "Discover Picasso National Museum"
+                    ],
+                    "image": "https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg"
+                }
+            ],
+            "Rome": [
+                {
+                    "day": "Day 1",
+                    "activities": [
+                        "Explore the Colosseum",
+                        "Visit the Roman Forum",
+                        "Throw a coin in the Trevi Fountain"
+                    ],
+                    "image": "https://cdn.pixabay.com/photo/2019/10/06/08/57/tiber-river-4529605_640.jpg"
+                },
+                {
+                    "day": "Day 2",
+                    "activities": [
+                        "Tour Vatican City and St. Peter's Basilica",
+                        "Discover the Pantheon",
+                        "Relax in Villa Borghese Gardens"
+                    ],
+                    "image": "https://cdn.pixabay.com/photo/2019/10/06/08/57/tiber-river-4529605_640.jpg"
+                },
+                {
+                    "day": "Day 3",
+                    "activities": [
+                        "Visit the Sistine Chapel",
+                        "Explore Capitoline Hill",
+                        "Shop at Campo de' Fiori market"
+                    ],
+                    "image": "https://cdn.pixabay.com/photo/2019/10/06/08/57/tiber-river-4529605_640.jpg"
+                },
+                {
+                    "day": "Day 4",
+                    "activities": [
+                        "Discover Palatine Hill",
+                        "Visit Galleria Borghese",
+                        "Explore Castel Sant'Angelo"
+                    ],
+                    "image": "https://cdn.pixabay.com/photo/2019/10/06/08/57/tiber-river-4529605_640.jpg"
+                },
+                {
+                    "day": "Day 5",
+                    "activities": [
+                        "Explore Roman Catacombs",
+                        "Visit Piazza Navona",
+                        "Discover Basilica di Santa Maria Maggiore"
+                    ],
+                    "image": "https://cdn.pixabay.com/photo/2019/10/06/08/57/tiber-river-4529605_640.jpg"
+                }
+            ],
+            "New York City": [
+                {
+                    "day": "Day 1",
+                    "activities": [
+                        "Explore Central Park",
+                        "Visit the Statue of Liberty",
+                        "Walk across the Brooklyn Bridge"
+                    ],
+                    "image": "https://media.istockphoto.com/id/1406960186/photo/the-skyline-of-new-york-city-united-states.jpg?s=612x612&w=0&k=20&c=yZJXNdzq3d5bKgvVzPBahBujpbVUXFyjyl9FN9L7esM="
+                },
+                {
+                    "day": "Day 2",
+                    "activities": [
+                        "Discover Times Square",
+                        "Visit the Metropolitan Museum of Art",
+                        "Explore the High Line"
+                    ],
+                    "image": "https://media.istockphoto.com/id/1406960186/photo/the-skyline-of-new-york-city-united-states.jpg?s=612x612&w=0&k=20&c=yZJXNdzq3d5bKgvVzPBahBujpbVUXFyjyl9FN9L7esM="
+                },
+                {
+                    "day": "Day 3",
+                    "activities": [
+                        "Take a Broadway show",
+                        "Explore the Museum of Modern Art",
+                        "Visit the 9/11 Memorial & Museum"
+                    ],
+                    "image": "https://media.istockphoto.com/id/1406960186/photo/the-skyline-of-new-york-city-united-states.jpg?s=612x612&w=0&k=20&c=yZJXNdzq3d5bKgvVzPBahBujpbVUXFyjyl9FN9L7esM="
+                },
+                {
+                    "day": "Day 4",
+                    "activities": [
+                        "Visit Rockefeller Center",
+                        "Explore the Empire State Building",
+                        "Take a food tour in Greenwich Village"
+                    ],
+                    "image": "https://media.istockphoto.com/id/1406960186/photo/the-skyline-of-new-york-city-united-states.jpg?s=612x612&w=0&k=20&c=yZJXNdzq3d5bKgvVzPBahBujpbVUXFyjyl9FN9L7esM="
+                },
+                {
+                    "day": "Day 5",
+                    "activities": [
+                        "Explore Wall Street",
+                        "Visit the American Museum of Natural History",
+                        "Take a ferry to Staten Island"
+                    ],
+                    "image": "https://media.istockphoto.com/id/1406960186/photo/the-skyline-of-new-york-city-united-states.jpg?s=612x612&w=0&k=20&c=yZJXNdzq3d5bKgvVzPBahBujpbVUXFyjyl9FN9L7esM="
+                }
+            ],
+            "Dubai": [
+              {
+                  "day": "Day 1",
+                  "activities": [
+                      "Visit the Burj Khalifa",
+                      "Explore the Dubai Mall",
+                      "Take a desert safari"
+                  ],
+                  "image": "https://img.freepik.com/free-photo/dubai-skyline-wallpaper_1409-6486.jpg"
+              },
+              {
+                  "day": "Day 2",
+                  "activities": [
+                      "Discover the Dubai Marina",
+                      "Visit the Palm Jumeirah",
+                      "Experience indoor skiing at Ski Dubai"
+                  ],
+                  "image": "https://img.freepik.com/free-photo/dubai-skyline-wallpaper_1409-6486.jpg"
+              },
+              {
+                  "day": "Day 3",
+                  "activities": [
+                      "Explore Old Dubai",
+                      "Visit the Dubai Museum",
+                      "Take a dhow cruise on Dubai Creek"
+                  ],
+                  "image": "https://img.freepik.com/free-photo/dubai-skyline-wallpaper_1409-6486.jpg"
+              },
+              {
+                  "day": "Day 4",
+                  "activities": [
+                      "Visit Dubai Miracle Garden",
+                      "Discover Dubai Frame",
+                      "Experience Dubai Fountain show"
+                  ],
+                  "image": "https://img.freepik.com/free-photo/dubai-skyline-wallpaper_1409-6486.jpg"
+              },
+              {
+                  "day": "Day 5",
+                  "activities": [
+                      "Explore Dubai Gold Souk",
+                      "Visit Dubai Dolphinarium",
+                      "Discover Dubai Opera House"
+                  ],
+                  "image": "https://img.freepik.com/free-photo/dubai-skyline-wallpaper_1409-6486.jpg"
+              }
+          ],
+          "London": [
+              {
+                  "day": "Day 1",
+                  "activities": [
+                      "Visit the Tower of London",
+                      "Explore the British Museum",
+                      "Take a ride on the London Eye"
+                  ],
+                  "image": "https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I="
+              },
+              {
+                  "day": "Day 2",
+                  "activities": [
+                      "Discover Buckingham Palace",
+                      "Explore the West End",
+                      "Visit the Tate Modern"
+                  ],
+                  "image": "https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I="
+              },
+              {
+                  "day": "Day 3",
+                  "activities": [
+                      "Stroll through Hyde Park",
+                      "Explore Covent Garden",
+                      "Take a river cruise on the Thames"
+                  ],
+                  "image": "https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I="
+              },
+              {
+                  "day": "Day 4",
+                  "activities": [
+                      "Visit Kew Gardens",
+                      "Discover Greenwich Park",
+                      "Explore London Zoo"
+                  ],
+                  "image": "https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I="
+              },
+              {
+                  "day": "Day 5",
+                  "activities": [
+                      "Explore the Shard",
+                      "Visit St. Paul's Cathedral",
+                      "Discover the British Library"
+                  ],
+                  "image": "https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I="
+              }
+          ]
+          
+  }
+  

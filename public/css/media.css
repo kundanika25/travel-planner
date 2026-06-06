@@ -1,0 +1,8 @@
+@media screen and (max-width: 1200px) {
+    header {
+        width: 95%;
+    }
+    header .song_side .content {
+        height: 18%;
+    }
+}
