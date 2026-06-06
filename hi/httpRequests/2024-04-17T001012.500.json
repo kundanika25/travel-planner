@@ -1,0 +1,3 @@
+{
+  "error": "E11000 duplicate key error collection: music_app.users index: email_1 dup key: { email: \"example@example.com\" }"
+}

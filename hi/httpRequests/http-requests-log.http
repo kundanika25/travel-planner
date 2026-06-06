@@ -1,0 +1,131 @@
+POST http://localhost:8000/auth/signup
+Content-Type: application/json
+Content-Length: 103
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "example2@example.com",
+  "password": "hashedpassword",
+  "email": "example2@example.com"
+}
+
+<> 2024-04-17T001026.201.json
+
+###
+
+POST http://localhost:8000/auth/signup
+Content-Type: application/json
+Content-Length: 101
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "example@example.com",
+  "password": "hashedpassword",
+  "email": "example@example.com"
+}
+
+<> 2024-04-17T001012.500.json
+
+###
+
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "example@example.com",
+  "password": "d"
+}
+
+<> 2024-04-17T001004.401.json
+
+###
+
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "example@example.com",
+  "password": "hashedpassword"
+}
+
+<> 2024-04-17T000956.200.json
+
+###
+
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+Content-Length: 67
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "example@example.com",
+  "password": "hashedpassword"
+}
+
+<> 2024-04-17T000942.404.json
+
+###
+
+POST http://localhost:8000/auth/signup
+Content-Type: application/json
+Content-Length: 105
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "example@example.com",
+  "password": "hashedpassword",
+  "email": "example@example.com"
+}
+
+<> 2024-04-17T000806.500.json
+
+###
+
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username": "example@example.com",
+  "password": "hashedpassword"
+}
+
+<> 2024-04-17T000703.404.json
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username": "example@example.com",
+  "password": "hashedpassword"
+}
+
+<> 2024-04-17T000515.401.html
+
+###
+
