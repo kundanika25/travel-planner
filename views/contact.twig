@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hackney&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Hackney', sans-serif; /* Change font-family to Hackney */
+            background-image: url('https://source.unsplash.com/3840x2160/?travel,dark,nature,landscape');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffa500; /* Change to desired hover color */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+            max-width: 600px; /* Limiting width for better readability */
+            margin: 100px auto; /* Centering on the page */
+        }
+
+        h1 {
+            color: #ffa500; /* Orange title */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #ccc; /* Light gray text */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            color: #333; /* Dark text color */
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px #ffa500; /* Orange shadow on focus */
+        }
+
+        button[type="submit"] {
+            background-color: #ffa500; /* Orange button */
+            color: #fff; /* White text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ffd700; /* Brighter orange on hover */
+        }
+
+        .error-message {
+            color: red;
+            display: none;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body ng-app="contactApp" ng-controller="contactController">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="home-link">Home</a></li>
+                                <li><a href="/Destination" class="destinations-link">Destinations</a></li>
+                                <li><a href="/itinerary" class="itinerary-link">Planner</a></li>
+                                <li><a href="/about" class="about-link">About</a></li>
+                                <li><a href="/contact" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out to us for any inquiries, suggestions, or feedback.</p>
+        <form name="contactForm" ng-submit="submitForm()" novalidate>
+            <input type="text" name="name" placeholder="Your Name" ng-model="formData.name" required>
+            <div class="error-message" ng-show="contactForm.name.$error.required && contactForm.$submitted">Name is required.</div>
+            <br>
+            <input type="email" name="email" placeholder="Your Email" ng-model="formData.email" required
+                ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/">
+            <div class="error-message" ng-show="contactForm.email.$error.required && contactForm.$submitted">Email is required.</div>
+            <div class="error-message" ng-show="contactForm.email.$error.pattern && contactForm.$submitted">Invalid email address.</div>
+            <br>
+            <textarea name="message" rows="5" placeholder="Your Message" ng-model="formData.message" required></textarea>
+            <div class="error-message" ng-show="contactForm.message.$error.required && contactForm.$submitted">Message is required.</div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <script>
+        var app = angular.module('contactApp', []);
+        app.controller('contactController', function ($scope) {
+            $scope.formData = {}; // Initialize form data object
+            $scope.submitForm = function () {
+                if ($scope.contactForm.$valid) {
+                    // Here, you can handle form submission, e.g., sending data to a server
+                    alert('Form submitted successfully.');
+                    $scope.formData = {}; // Reset form data
+                    $scope.contactForm.$setPristine(); // Set form to pristine state
+                    $scope.contactForm.$setUntouched(); // Set form to untouched state
+                } else {
+                    alert('Form submission failed. Please check the form.');
+                    // Focus on the first invalid field
+                    var firstErrorField = document.querySelector('.error-message');
+                    if (firstErrorField) {
+                        firstErrorField.previousElementSibling.focus();
+                    }
+                }
+            };
+        });
+    </script>
+</body>
+
+</html>
+
+

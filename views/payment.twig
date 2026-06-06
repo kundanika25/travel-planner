@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Package Payment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Light background with opacity */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .error-message {
+            color: #ff0000;
+            margin-top: 5px;
+        }
+
+        .cancel-button {
+            background-color: #dc3545;
+            margin-right: 10px;
+        }
+
+        .cancel-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('default-background.jpg');"> <!-- Default background image -->
+    <div class="container">
+        <h1>Payment Details</h1>
+        <form id="paymentForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+            <span id="fullNameError" class="error-message"></span><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <span id="emailError" class="error-message"></span><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <span id="phoneError" class="error-message"></span><br>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required><br>
+            <span id="cardNumberError" class="error-message"></span><br>
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required><br>
+            <span id="expiryDateError" class="error-message"></span><br>
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv" required><br>
+            <span id="cvvError" class="error-message"></span><br>
+            <button type="submit">Pay Now</button>
+            <button type="button" class="cancel-button" onclick="window.location.href='index.twig'">Cancel</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('paymentForm');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const cardNumber = document.getElementById('cardNumber').value.trim();
+            const expiryDate = document.getElementById('expiryDate').value.trim();
+            const cvv = document.getElementById('cvv').value.trim();
+
+            // Validation
+            let isValid = true;
+
+            // Full Name
+            if (!fullName) {
+                document.getElementById('fullNameError').innerText = 'Full Name is required';
+                isValid = false;
+            } else {
+                document.getElementById('fullNameError').innerText = '';
+            }
+
+            // Email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailPattern.test(email)) {
+                document.getElementById('emailError').innerText = 'Invalid Email Address';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').innerText = '';
+            }
+
+            // Phone Number
+            const phonePattern = /^\d{10}$/;
+            if (!phone || !phonePattern.test(phone)) {
+                document.getElementById('phoneError').innerText = 'Invalid Phone Number';
+                isValid = false;
+            } else {
+                document.getElementById('phoneError').innerText = '';
+            }
+
+            // Card Number
+            const cardNumberPattern = /^\d{16}$/;
+            if (!cardNumber || !cardNumberPattern.test(cardNumber)) {
+                document.getElementById('cardNumberError').innerText = 'Invalid Card Number';
+                isValid = false;
+            } else {
+                document.getElementById('cardNumberError').innerText = '';
+            }
+
+            // Expiry Date
+            const expiryDatePattern = /^(0[1-9]|1[0-2])\/?([0-9]{2})$/;
+            if (!expiryDate || !expiryDatePattern.test(expiryDate)) {
+                document.getElementById('expiryDateError').innerText = 'Invalid Expiry Date (MM/YY)';
+                isValid = false;
+            } else {
+                document.getElementById('expiryDateError').innerText = '';
+            }
+
+            // CVV
+            const cvvPattern = /^\d{3}$/;
+            if (!cvv || !cvvPattern.test(cvv)) {
+                document.getElementById('cvvError').innerText = 'Invalid CVV (3 digits)';
+                isValid = false;
+            } else {
+                document.getElementById('cvvError').innerText = '';
+            }
+
+            // If all fields are valid, submit the form
+            if (isValid) {
+                // You can submit the form here or proceed with payment processing
+                alert('Payment Successful!');
+                form.reset();
+            }
+        });
+    </script>
+</body>
+
+</html>

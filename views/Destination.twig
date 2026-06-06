@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000000, #4b0082, #ff0000, #ffd700, #008000, #0000ff);
+            background-size: 600% 600%;
+            animation: gradientBG 10s ease infinite;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .destination-item {
+            flex: 0 0 calc(33.33% - 20px);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .destination-item:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .destination-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .destination-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .destination-item p {
+            font-size: 1.2em;
+            color: #ccc;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Popular Destinations</h1>
+        <div class="destination" id="destination-list">
+            <!-- Destination items will be dynamically added here -->
+        </div>
+    </div>
+
+    <script>
+        // Array of destinations with images and descriptions
+        const destinations = [
+            { name: "New York City", image: "https://source.unsplash.com/featured/?new,york,city", description: "The city that never sleeps! Explore iconic landmarks and vibrant nightlife." },
+            { name: "Paris", image: "https://source.unsplash.com/featured/?paris,france", description: "The city of love! Discover romantic streets, exquisite cuisine, and world-famous art." },
+            // Add more destinations here
+        ];
+
+        // Function to create destination items
+        function createDestinationItem(destination) {
+            const item = document.createElement('div');
+            item.classList.add('destination-item');
+
+            const img = document.createElement('img');
+            img.src = destination.image;
+            img.alt = destination.name;
+
+            const name = document.createElement('h3');
+            name.textContent = destination.name;
+
+            const description = document.createElement('p');
+            description.textContent = destination.description;
+
+            item.appendChild(img);
+            item.appendChild(name);
+            item.appendChild(description);
+
+            return item;
+        }
+
+        // Function to render destination items
+        function renderDestinations() {
+            const destinationList = document.getElementById('destination-list');
+
+            destinations.forEach(destination => {
+                const item = createDestinationItem(destination);
+                destinationList.appendChild(item);
+            });
+        }
+
+        // Render destinations on page load
+        window.onload = renderDestinations;
+    </script>
+</body>
+</html>

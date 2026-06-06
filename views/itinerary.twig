@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trip Planner</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #c9c7c7;
+            color: #333;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .itinerary-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .itinerary-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .itinerary-item {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(248, 249, 250, 0.9); /* Adjust the opacity here */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.itinerary-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.itinerary-item h3 {
+    font-size: 24px;
+    font-weight: bolder; /* Set font weight to bold */
+    margin-bottom: 10px;
+    color: #000; /* Change text color to black */
+    text-align: center;
+}
+
+.itinerary-item p {
+    color: #000; /* Change paragraph text color to a darker shade of gray */
+    font-weight: 700; /* Set font weight to normal */
+}
+
+
+
+        .itinerary-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0.4;
+        }
+
+        .itinerary-item:hover img {
+            opacity: 0.6;
+        }
+
+        .alert {
+            padding: 15px;
+            background-color: #f44336;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        #proceedToPayment {
+            display: block;
+            margin: 20px auto;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffa500; /* Change to desired hover color */
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                   <li><a href="/" class="home-link">Home</a></li>
+                                   <li><a href="/Destination" class="destinations-link">Destinations</a></li>
+                                   <li><a href="/itinerary" class="itinerary-link">Planner</a></li>
+                                   <li><a href="/about" class="about-link">About</a></li>
+                                   <li><a href="/contact" class="contact-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h1>Trip Planner</h1>
+            <form id="tripForm">
+                <label for="destination">Destination:</label>
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                    required
+                >
+                <br>
+                <label for="startDate">Start Date:</label>
+                <input
+                    type="date"
+                    id="startDate"
+                    name="startDate"
+                    required
+                >
+                <br>
+                <label for="endDate">End Date:</label>
+                <input
+                    type="date"
+                    id="endDate"
+                    name="endDate"
+                    required
+                >
+                <br>
+                <button type="submit">Plan Trip</button>
+                <div class="alert" id="alert"></div>
+            </form>
+            <div class="itinerary-container" id="itineraryContainer">
+                <div class="itinerary-list" id="itineraryList"></div>
+            </div>
+            <button id="proceedToPayment">Proceed to Payment</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#tripForm').submit(function (event) {
+                    event.preventDefault();
+                    var formData = {
+                        destination: $('#destination').val(),
+                        startDate: $('#startDate').val(),
+                        endDate: $('#endDate').val()
+                    };
+                    var date1 = new Date(formData.startDate);
+                    var date2 = new Date(formData.endDate);
+                    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+                    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                    if (diffDays < 1 || diffDays > 5) { // Allow dates from 1 to 5 days
+                        $('#alert').text('Please select dates ranging from 1 to 5 days apart.').show();
+                        return;
+                    }
+                    $('#alert').hide();
+                    localStorage.setItem('tripDetails', JSON.stringify(formData));
+                    $('#result').html('<h2>Your Trip Details:</h2><p>Destination: ' + formData.destination + '</p><p>Start Date: ' + formData.startDate + '</p><p>End Date: ' + formData.endDate + '</p>');
+                    $('#itineraryList').empty();
+                    $.getJSON('/js/itinerary.json', function (data) {
+                        var itinerary = data[formData.destination];
+                        if (!itinerary) {
+                            alert('Destination not found in the itinerary.');
+                            return;
+                        }
+                        for (var i = 0; i < diffDays; i++) { // Display itinerary for selected days only
+                            var item = itinerary[i];
+                            var itineraryItem = '<div class="itinerary-item">' +
+                                '<img src="' + item.image + '" alt="' + item.day + '">' +
+                                '<h3>' + item.day + '</h3>' +
+                                '<p>' + item.activities.join('</p><p>') + '</p>' +
+                                '</div>';
+                            $('#itineraryList').append(itineraryItem);
+                        }
+                        // Set background image based on destination
+                        $('body').css('background-image', 'url("' + itinerary[0].image + '")');
+                    }).fail(function () {
+                        alert('Failed to load itinerary data.');
+                    });
+                });
+
+                $('#proceedToPayment').click(function () {
+                    window.location.href = '/payment'; // Redirect to payment page
+                });
+            });
+        </script>
+    </body>
+</html>
